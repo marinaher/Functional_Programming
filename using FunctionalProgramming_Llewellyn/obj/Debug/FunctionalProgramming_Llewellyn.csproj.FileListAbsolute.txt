@@ -1,0 +1,5 @@
+C:\Users\reald\Documents\GitHub\devCodeCamp Projects\Functional_Programming\using FunctionalProgramming_Llewellyn\bin\Debug\using FunctionalProgramming_Llewellyn.exe.config
+C:\Users\reald\Documents\GitHub\devCodeCamp Projects\Functional_Programming\using FunctionalProgramming_Llewellyn\bin\Debug\using FunctionalProgramming_Llewellyn.exe
+C:\Users\reald\Documents\GitHub\devCodeCamp Projects\Functional_Programming\using FunctionalProgramming_Llewellyn\bin\Debug\using FunctionalProgramming_Llewellyn.pdb
+C:\Users\reald\Documents\GitHub\devCodeCamp Projects\Functional_Programming\using FunctionalProgramming_Llewellyn\obj\Debug\using FunctionalProgramming_Llewellyn.exe
+C:\Users\reald\Documents\GitHub\devCodeCamp Projects\Functional_Programming\using FunctionalProgramming_Llewellyn\obj\Debug\using FunctionalProgramming_Llewellyn.pdb

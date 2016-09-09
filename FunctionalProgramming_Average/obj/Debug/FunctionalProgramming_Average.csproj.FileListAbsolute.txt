@@ -1,0 +1,6 @@
+C:\Users\reald\Documents\GitHub\devCodeCamp Projects\Functional_Programming\FunctionalProgramming_Average\bin\Debug\FunctionalProgramming_Average.exe.config
+C:\Users\reald\Documents\GitHub\devCodeCamp Projects\Functional_Programming\FunctionalProgramming_Average\bin\Debug\FunctionalProgramming_Average.exe
+C:\Users\reald\Documents\GitHub\devCodeCamp Projects\Functional_Programming\FunctionalProgramming_Average\bin\Debug\FunctionalProgramming_Average.pdb
+C:\Users\reald\Documents\GitHub\devCodeCamp Projects\Functional_Programming\FunctionalProgramming_Average\obj\Debug\FunctionalProgramming_Average.csprojResolveAssemblyReference.cache
+C:\Users\reald\Documents\GitHub\devCodeCamp Projects\Functional_Programming\FunctionalProgramming_Average\obj\Debug\FunctionalProgramming_Average.exe
+C:\Users\reald\Documents\GitHub\devCodeCamp Projects\Functional_Programming\FunctionalProgramming_Average\obj\Debug\FunctionalProgramming_Average.pdb
