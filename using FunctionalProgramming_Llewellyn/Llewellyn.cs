@@ -11,37 +11,21 @@ namespace FunctionalProgramming_Llewellyn
         public delegate string LettersDelegate(string str);
         public LettersDelegate letterDelegate;
 
-        public string OrderLetters(string str)
+        public void OrderLetters()
         {
-            StringBuilder builder = new StringBuilder();
-            if (str == null) return null;
-            if (str == "") return "";
-            str = str.ToUpper();
-            char[] word = str.ToCharArray();
-            Array.Sort(word);
-            int count = 0;
+            string word = "Llewellyn";
 
-            for (int i = 0; i < word.Length; i++)
+            var letterCount = word.ToUpper()
+                .OrderBy(x => x)
+                .GroupBy(c => c)
+                .Select(k => new { Char = k.Key, Count = k.Count() });
+
+            foreach (var y in letterCount)
             {
-                if (word[i] < 'A' || word[i] > 'Z') continue;
-                if (builder.Length == 0)
-                {
-                    builder = builder.Append(word[i]);
-                    count = 1;
-                }
-                else if (word[i] == word[i - 1])
-                {
-                    count++;
-                }
-                else
-                {
-                    builder = builder.Append(count.ToString());
-                    builder = builder.Append(word[i]);
-                    count = 1;
-                }
+                Console.Write("{0}{1}", y.Char, y.Count);
             }
-            builder = builder.Append(count.ToString());
-            return builder.ToString();
+
+            Console.ReadLine();
         }
     }
 }

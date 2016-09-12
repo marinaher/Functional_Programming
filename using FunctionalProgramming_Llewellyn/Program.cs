@@ -10,13 +10,8 @@ namespace FunctionalProgramming_Llewellyn
     {
         static void Main(string[] args)
         {
-            string word = "Llewellyn";
-            Llewellyn functionalProgramming = new Llewellyn();
-
-            functionalProgramming.letterDelegate = (string x) => { return functionalProgramming.OrderLetters(x); };
-
-            Console.WriteLine(functionalProgramming.OrderLetters(word));
-            Console.ReadLine();
+            Llewellyn llewellyn = new Llewellyn();
+            llewellyn.OrderLetters();
         }
     }
 }

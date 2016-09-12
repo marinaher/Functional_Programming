@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Functional_Programming_Average
 {
@@ -8,28 +10,24 @@ namespace Functional_Programming_Average
         {
 
         }
-        public delegate int Grades(string grades);                  //define delegate type
-        public Grades operateGrades;                                //create instance of delegate
+        public delegate int Grades(string grades);
+        public Grades operateGrades;
 
-        public int AverageGrades(string average)                    //method to convert string literale to ints
+        public void GetAverageGrade()
         {
-            int total = 0;
+            string grades = "90,100,82,89,55";
+
             List<int> final = new List<int>();
-            foreach (var i in average.Split(','))
-            {
-                int gradeNumber;
-                if (int.TryParse(i, out gradeNumber))
-                {
-                    final.Add(gradeNumber);
-                }
-            }
-            final.Sort();
-            for (int j = 3; j < final.Count; j++)
-            {
-                total = total + final[j];
-            }
-            total = total / (final.Count - 3);
-            return total;
+
+            int gradeInt;
+            var gradesAsInt = grades.Split(new[] { ',' })
+                .Select(gradesAsString => int.TryParse(gradesAsString, out gradeInt) ? gradeInt : 0).ToList()
+                .OrderBy(gradeValues => gradeValues).Skip(3);
+
+            double averageGrade = gradesAsInt.Average();
+
+            Console.WriteLine("Final Average of two highest grades: " + averageGrade);
+            Console.ReadLine();
         }
     }
 }
