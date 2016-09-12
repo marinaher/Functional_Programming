@@ -8,9 +8,6 @@ namespace FunctionalProgramming_Llewellyn
 {
     class Llewellyn
     {
-        public delegate string LettersDelegate(string str);
-        public LettersDelegate letterDelegate;
-
         public void OrderLetters()
         {
             string word = "Llewellyn";

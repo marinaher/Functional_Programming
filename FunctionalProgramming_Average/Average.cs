@@ -10,9 +10,6 @@ namespace Functional_Programming_Average
         {
 
         }
-        public delegate int Grades(string grades);
-        public Grades operateGrades;
-
         public void GetAverageGrade()
         {
             string grades = "90,100,82,89,55";
@@ -20,9 +17,10 @@ namespace Functional_Programming_Average
             List<int> final = new List<int>();
 
             int gradeInt;
-            var gradesAsInt = grades.Split(new[] { ',' })
-                .Select(gradesAsString => int.TryParse(gradesAsString, out gradeInt) ? gradeInt : 0).ToList()
-                .OrderBy(gradeValues => gradeValues).Skip(3);
+
+            var gradesAsInt = grades.Split(new[] { ',' }).
+                Select(gradesAsString => int.TryParse(gradesAsString, out gradeInt) ? gradeInt : 0).ToList().
+                OrderBy(gradeValues => gradeValues).Skip(3);
 
             double averageGrade = gradesAsInt.Average();
 
